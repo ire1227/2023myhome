@@ -5,3 +5,8 @@ header{width: 1000px;margin: 0 auto;}
     width: 1000px;
     background: red;
 }
+.header{
+    width: 1000px;
+    height: 100px;
+    background: green;
+}
