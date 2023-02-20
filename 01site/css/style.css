@@ -52,3 +52,93 @@ h1 img{display: block;}
 .visual{
     background: #213969 url(../img/visual_bg.jpg) no-repeat center;
 }
+.vWrap{
+    position: relative;height: 400px;overflow: hidden;
+}
+.vWrap img{position: absolute;}
+.vWrap .img1{
+    left: 0;top: -50%;
+    margin-top: 300px;
+} 
+/* 왜 나는 마진톱 값을 +로 해야 나오지? */
+
+.vWrap .img2{right: 20px;top: 20px;}
+
+/* banner */
+.bWrapper{
+    background: #eee;
+    margin-bottom: 50px;
+}
+.bWrap li{
+    width: calc( 100% / 5 );
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+/* padding 좌우값이 안먹음 */
+
+.bWrap li img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.bWrap li h3{
+    margin-bottom: 7px;
+}
+.bWrap li:nth-child(1){background: #7C99B9;}
+.bWrap li:nth-child(2){background: #4F74A1;}
+.bWrap li:nth-child(3){background: #4B8CE0;}
+.bWrap li:nth-child(4){background: #3DB5F3;}
+.bWrap li:nth-child(5){background: #95C8FF;}
+
+
+/* job */
+.jobWrap{margin-bottom: 25px;}
+.jobItem{
+    width: calc(( 100% - 50px)/3 );
+    float: left;
+    margin-right: 25px;
+}
+.jobItem:last-child{
+    margin-right: 0;
+}
+.jobItem img{display: block;}
+.jobWrap .tWrap{
+    border: 1px solid #ddd;
+    padding: 20px 15px;
+    border-top: 0 none;
+}
+.tWrap h3{margin-bottom: 7px;}
+.tWrap p{font-size: 12PX;color: #888;}
+
+.con li{
+    float: left;
+    width: calc( ( 100% - 50px )/3 );
+    margin-right: 25px;
+    border: 1px solid #ddd;
+    padding: 20px 15px;
+    position: relative;
+    overflow: hidden;
+    background-position: 130px 10px;
+    background-repeat: no-repeat;
+}
+.con li:last-child{margin-right: 0;}
+.cWrap{
+    position: relative;
+    width: 200px;
+}
+.con li img{
+    position: absolute;
+    right: -20px;top: 10px;
+}
+.con li .cWrap h3,
+.con li .cWrap p{
+    margin-bottom: 10px;line-height:21px;
+}
+.con li .cWrap p{
+    font-size: 12px;
+}
+.con li a{
+    color: #4B8CE0;
+}
