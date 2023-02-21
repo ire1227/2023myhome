@@ -69,12 +69,15 @@ h1 img{display: block;}
     background: #eee;
     margin-bottom: 50px;
 }
+.bWrap ul li p{
+    font-size: 13px;
+}
 .bWrap li{
     width: calc( 100% / 5 );
     float: left;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 ;
 }
 /* padding 좌우값이 안먹음 */
 
@@ -109,7 +112,7 @@ h1 img{display: block;}
     padding: 20px 15px;
     border-top: 0 none;
 }
-.tWrap h3{margin-bottom: 7px;}
+.tWrap h3{margin-bottom: 7px;color: #333;}
 .tWrap p{font-size: 12PX;color: #888;}
 
 /* con */
@@ -133,6 +136,9 @@ h1 img{display: block;}
 .con li img{
     position: absolute;
     right: -20px;top: 10px;
+}
+.con li .cWrap h3{
+    color: #333;
 }
 .con li .cWrap h3,
 .con li .cWrap p{
@@ -163,6 +169,7 @@ h1 img{display: block;}
     padding: 0 15px;
     position: relative;
     color: #ccc;
+    font-size: 13px;
 }
 #ft .topMenu li a:after{
     content: "";display: block;width: 1px;height: 13px;background: #ccc;
@@ -170,3 +177,28 @@ h1 img{display: block;}
 }
 
 #ft .topMenu li:first-child a:after{display: none;}
+
+.ftbot{
+    position: relative;
+}
+.ftbot h3{
+    float: left;line-height: 102px;color: white;
+    font-size: 18px;
+    position: absolute;
+    left: 30px;
+    font-style: oblique;
+}
+.bottomMenu li{
+    font-size: 12px;
+    position: absolute;
+    float: left;
+    left: 170px;
+}
+.bottomMenu{
+    padding: 10px 0;
+    color: #A1A1A1;
+}
+.bottomMenu li:last-child{
+    position: absolute;
+    top: 35px;
+}
