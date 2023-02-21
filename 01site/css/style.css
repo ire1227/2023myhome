@@ -112,6 +112,8 @@ h1 img{display: block;}
 .tWrap h3{margin-bottom: 7px;}
 .tWrap p{font-size: 12PX;color: #888;}
 
+/* con */
+.con{margin-bottom: 50px;}
 .con li{
     float: left;
     width: calc( ( 100% - 50px )/3 );
@@ -137,8 +139,34 @@ h1 img{display: block;}
     margin-bottom: 10px;line-height:21px;
 }
 .con li .cWrap p{
-    font-size: 12px;
+    font-size: 12px;color: #888;
 }
 .con li a{
     color: #4B8CE0;
 }
+
+/* footer */
+#ft{
+    background-color: #5E5E5E;width: 100%;height: 145px;
+}
+.footerTop{background-color: #4D4D4D;}
+#ft .topMenuWrap{
+   height: 43px;
+}
+#ft .topMenu li{
+    float: left;
+ }
+
+#ft .topMenu li a{
+    display: block;
+    line-height: 43px;
+    padding: 0 15px;
+    position: relative;
+    color: #ccc;
+}
+#ft .topMenu li a:after{
+    content: "";display: block;width: 1px;height: 13px;background: #ccc;
+    position: absolute;left: -2px;top: 15px;
+}
+
+#ft .topMenu li:first-child a:after{display: none;}
