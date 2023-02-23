@@ -42,11 +42,104 @@ body{
     text-align: center;
 }
 
+.slideWrap{
+    margin-bottom: 120px;
+}
 .slideWrap .sItem{
     height: 100vh;
     /* 화면을 봤을 때 브라우저의 크기에 따라 움직이게함 */
     min-height: 400px;
+    
 }
 
+
+    
+
+.txtWrap{
+    position: absolute;
+    left: 50px; top: 450px;
+    /* margin-bottom: 2px solid white; */
+}
+
+.txtWrap h3{
+    font-size: 80px;color: #FFF;
+    letter-spacing: -2.6px;
+}
+.txtWrap p{
+    font-size: 24px;color: #FFF;
+}
+
+
+
 /* section */
-.content{height: 300px;background: pink;}
+.content{height: 200px;background: white; margin-bottom: 100px;}
+.conWrap{
+    margin-bottom: 30px
+}
+.conWrapTop{
+    float: left;
+    height: 124.062px;
+    margin-bottom: 20px;
+}
+.conWrapTop h2{
+    display: block;
+    font-size: 44px;
+}
+.conWrapTop h2:after{
+    width: 5px;height: 2px;background: yellow;
+}
+.conWrapBottom{
+    position: absolute;
+    bottom: 0; right: 0;
+    height: 56.1562px;
+}
+.conWrapBottom h1{
+    display: block;
+    font-size: 18px;font-weight: 400;
+}
+
+/* card */
+
+.img{
+    background: skyblue;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.img img{
+    width: 100%;display: block;
+}
+.img div.imgView{
+    width: calc( ( 1280px - 64px )/ 3 );
+    margin-right: 32px;
+    float: left;
+}
+.img div.imgView:last-child{
+    margin-right: 0;
+}
+div.imgView img{transition: 0.3s;}
+div.imgView img:hover{
+    transform: translateY(-1em);
+}
+.img div.imgView h1{
+    font-size: 21px;
+    padding: 10px 15px;
+}
+.img div.imgView p{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 15px;
+}
+
+/* banner */
+.bannerWrap{
+    position: relative;
+}
+.bannerWrap .txtBox{
+    background: #ffd44a;
+    height: 338px;
+    width: 1114px;
+}
+.imgBox{
+    position: absolute;
+    right: 0; top: 102px;
+}
