@@ -74,20 +74,25 @@ body{
 /* section */
 .content{height: 200px;background: white; margin-bottom: 100px;}
 .conWrap{
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    position: relative;
 }
 .conWrapTop{
     float: left;
     height: 124.062px;
     margin-bottom: 20px;
+
 }
 .conWrapTop h2{
     display: block;
     font-size: 44px;
 }
 .conWrapTop h2:after{
-    width: 5px;height: 2px;background: yellow;
+    content: ""; position: absolute;
+    left: 0;
+    width: 10px;height: 2px;background-color:  yellow;
 }
+
 .conWrapBottom{
     position: absolute;
     bottom: 0; right: 0;
@@ -123,6 +128,8 @@ div.imgView img{
 }
 div.imgView img:hover{
     transform: translateY(-1em);
+
+
 }
 .img div.imgView h1{
     font-size: 21px;
@@ -137,6 +144,7 @@ div.imgView img:hover{
 /* banner */
 .bannerWrap{
     position: relative;
+    margin-bottom: 300px;
 }
 .bannerWrap .txtBox{
     background: #ffd44a;
@@ -167,3 +175,125 @@ div.imgView img:hover{
     position: absolute;
     left: 80px; top: 191px;
 }
+/* swiper */
+#sp{
+    background: #F7F8F9;
+    height: 965.031px;
+}
+.spWrap{
+    position: relative;
+}
+#sp h3{
+    font-size: 44px;
+    position: absolute;
+    top: 160px;
+}
+.spButton{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    
+
+}
+.spButton button{
+    font-size: 14px;
+    height: 38px;width: 97.125px;
+    border-radius: 19px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    /* background: #F7F8F9; */
+}
+.spButton button:hover{
+    color: black;
+    background: #F7F8F9;
+}
+
+
+
+
+
+/* footer */
+.ft{
+    width: 100%;
+    background: #171717;
+    height: 290px;
+    position: relative;
+}
+.ft .ftWrap{
+    height: 164px;
+    position: absolute;
+    top: 53px;left: 330px;
+    padding: 7px 20px;
+   
+}
+.ft .ftWrap img{
+    display: block;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.ftWrap .FamilySite{
+    position: absolute;
+    background: #080808;
+    width: 180px;
+    height: 32px;
+    padding: 0 24px 0 24px;
+    cursor: pointer;
+    right: 0; top: 0;
+}
+.ftWrap .FamilySite a{
+    color: hsla(0,0%,88.2%,.5);
+    font-size: 11px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    text-decoration: none solid rgb(30, 30, 30);
+}
+.footerTitle{
+    margin-bottom: 40px;
+}
+.footerTitle p{
+    font-size: 11px;
+    color: hsla(0,0%,88.2%,.5);
+    line-height: 20px;
+}
+.ftBottom{
+    margin: 46px 0 0 0;
+}
+.ftBottom li{
+    float: left;
+    position: relative;
+    /* padding: 0 10px; */
+}
+
+.ftBottom li a{
+    font-size: 12px;
+    color: hsla(0,0%,88.2%,.5);
+    line-height: 20px;
+    margin-right: 20px;
+}
+.ftBottom li a:after{
+    content: "";
+    width: 2px;
+    height: 12px;
+    background: hsla(0,0%,88.2%,.5);
+    position: absolute;
+    left: -10px;top: 8px;
+}
+.ftBottom li:first-child a:after{
+  display: none;
+}
+/* li에 애프터? li a에 애프터? */
+.snsBox{
+    position: absolute;
+    right: 0;bottom: 0;
+    left: 1164px;
+    height: 26px;
+    width: 116px;
+    top: 137px;
+}
+.snsBox a{
+   float: left;
+   margin-right: 13px;
+}
+
+
