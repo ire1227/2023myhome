@@ -101,12 +101,13 @@ body{
 /* card */
 
 .img{
-    background: skyblue;
+    background: _skyblue;
     margin: 0 auto;
     margin-bottom: 100px;
 }
 .img img{
     width: 100%;display: block;
+    box-shadow: rgba(0, 0, 0, 0);
 }
 .img div.imgView{
     width: calc( ( 1280px - 64px )/ 3 );
@@ -116,18 +117,21 @@ body{
 .img div.imgView:last-child{
     margin-right: 0;
 }
-div.imgView img{transition: 0.3s;}
+div.imgView img{
+    transition: 0.3s;
+    box-shadow: 0.2s;
+}
 div.imgView img:hover{
     transform: translateY(-1em);
 }
 .img div.imgView h1{
     font-size: 21px;
-    padding: 10px 15px;
+    padding: 15px 15px;
 }
 .img div.imgView p{
     font-size: 15px;
     font-weight: 400;
-    padding: 10px 15px;
+    padding: 0 15px;
 }
 
 /* banner */
@@ -142,4 +146,24 @@ div.imgView img:hover{
 .imgBox{
     position: absolute;
     right: 0; top: 102px;
+}
+.purposeWrap{
+    float: left;
+}
+.purposeWrap h2{
+    width: 490px;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    position: absolute;
+    left: 80px; top: 90px;
+}
+.purposeWrap p{
+    width: 490px;
+    font-size: 15px;
+    letter-spacing: -0.6px;
+    font-weight: 500;
+    position: absolute;
+    left: 80px; top: 191px;
 }
