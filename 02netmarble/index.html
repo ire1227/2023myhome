@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>이레의넷마블</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../02netmarble/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
     <header class="hd"> 
@@ -110,6 +111,33 @@
                 <button>소셜미디어</button>
             </div>
         </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="section1">
+                        <div class="slideBox1">
+                            <h1>
+                                넷마블문화재단 사업기획 및 운영<br>
+                                담당자 모집
+                            </h1>
+                            <p>넷마블문화재단에서 아래와 같이 새로운 직원을<br>
+                            모집합니다. 많은 분들의 지원 바랍니다.<br><br>
+                            1.직무...</p>
+                            
+                        </div>
+                        <div class="dateBox"><p>공지사항•2023.01.26</p></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">slide 2</div>
+                <div class="swiper-slide">slide 3</div>
+                <div class="swiper-slide">slide 4</div>
+                <div class="swiper-slide">slide 5</div>
+                <div class="swiper-slide">slide 6</div>
+                <div class="swiper-slide">slide 7</div>
+                <div class="swiper-slide">slide 8</div>
+            </div>
+        </div>
     </div>
 
     <div class="ft">
@@ -120,11 +148,11 @@
                 Copyright © Netmarble Corp. All Rights Reserved.</p>
             </div>
             <ul class="ftBottom container clearfix">
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">SNS 저작물 이용 동의서</a></li>
+                <li><a href="https://www.netmarblefoundation.org/policy">개인정보처리방침</a></li>
+                <li><a href="https://www.netmarblefoundation.org/sns_agreement">SNS 저작물 이용 동의서</a></li>
                 <li><a href="#">이메일 문의</a></li>
-                <li><a href="#">주무관청</a></li>
-                <li><a href="#">국세청</a></li>
+                <li><a href="https://www.mcst.go.kr/kor/main.jsp">주무관청</a></li>
+                <li><a href="https://www.nts.go.kr/">국세청</a></li>
             </ul>
             <div class="snsBox clearfix">
                 <a href="https://www.facebook.com/netmarblefoundation/"><img src="images/main/facebook.png" alt=""></a>
@@ -176,5 +204,19 @@
             pager:false,
         })
     </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3.2,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+     
+    });
+  </script>
 </body>
 </html>
