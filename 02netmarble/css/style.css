@@ -183,6 +183,14 @@ div.imgView img:hover{
 .spWrap{
     position: relative;
 }
+.spTitle:after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background: #FFD44A;
+    top: 230px;
+}
 #sp h3{
     font-size: 44px;
     position: absolute;
@@ -192,8 +200,6 @@ div.imgView img:hover{
     position: absolute;
     top: 200px;
     right: 0;
-    
-
 }
 .spButton button{
     font-size: 14px;
@@ -212,37 +218,46 @@ div.imgView img:hover{
 .swiper.mySwiper{
     width: 1216px;
     height: 466px;
+    padding: 32px 0 32px 0;
+    cursor: grab;
+   
 }
-.swiper-wrapper{
-    position: absolute;
-    padding: 30px 30px;
-    
 
-}
 .swiper{
-    width: 100%;height: 100%;
-    position: relative;
+    width: 100%;height: 470px;
+    /* position: relative; */
     top: 300px;
 }
 .swiper-slide{
     /* text-align: center; */
-    width: 360px;
-    height: 466px;
+    width: 100%;height: 100%;
     border-radius: 4px;
     background: #fff;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* transition: 0.3s; */
     position: relative;
-    /* padding: 30px 30px; */
     
+    /* padding: 30px 30px; */   
 }
-.swiper-slide:hover{
+.section1{
+    transition: 0.3s;
+    background: #fff;
+    /* padding: 30px 30px; */
+    margin: 0 auto;
+}
+.section1:hover{
     border-radius: 4px;
     transform:translateY(-20px);
-    box-shadow: 14px 14px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
+/* .swiper-slide:hover{
+    border-radius: 4px;
+    transform:translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+} */
 /* translate 값이 안먹지? */
 .swiper-slide img{
     display: block;
@@ -250,26 +265,62 @@ div.imgView img:hover{
     height: 100%;
     object-fit: cover;
 }
-.swiper-slide h1{
+.swiper-slide h2{
     font-size: 21px;
     font-weight: 500;
     letter-spacing: -0.6px;
     color: #1e1e1e;
     line-height: 31.92px;
+    margin-bottom: 10px;
 }
-.swiper-slide .dateBox{
-    position: absolute;
+.slideBox1{
+    padding: 25px 25px;
+}
+.slideBox1 h1{
+    font-size: 15px;
+    color:#C9C9C9;
+    margin-bottom: 210px;
+}
+/* .swiper-slide .dateBox{
     bottom: 30px;
     left: 30px;
-}
-.swiper-slide p{
-    font-size: 15px;
+} */
+.slideBox1 p{
+    font-size: 13px;
     color: #C9C9C9;
 }
-.swiper-slide .section1{
-    /* position: absolute; */
-    padding: 30px 30px;
+.slideBox2{
+    padding: 25px 25px;
 }
+.slideBox2 h2{
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    color: #1e1e1e;
+    line-height: 31.92px;
+    margin-bottom: 10px;
+}
+.slideBox2 h1{
+    font-size: 13.3333px;
+    color:#000;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.slideBox2 p{
+    font-size: 13px;
+    color: #C9C9C9;
+}
+.imgWrap{
+    width: 100%;
+    height: 180px;
+    padding-top: 60%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+
+
 
 
 
