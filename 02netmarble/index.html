@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../2023web/00javascript/20230303_wow/animate.css">
     <link rel="stylesheet" href="../02netmarble/css/jquery.bxslider.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
@@ -71,11 +72,12 @@
     </div>
     <section class="content container">
         <div class="conWrap clearfix">
-            <div class="conWrapTop">
+            <div class="conWrapTop wow bounceInUp" data-wow-delay="0.2s">
+                <!-- wow 효과 왜 안나올까 wowwow-->
                 <h2>문화를 만들고 인재를 키우고<br>
                     마음을 나눕니다</h2>
             </div>
-            <div class="conWrapBottom">
+            <div class="conWrapBottom wow bounceInUp" data-wow-delay="0.4s">
                 <h1>넷마블문화재단은 문화적 가치 확산을 통해 우리 사회의 미래 경쟁력을 높여 가고자<br>
                     다양한 공익 활동을 전개해 나가고 있습니다.</h1>
             </div>
@@ -312,6 +314,10 @@
       },
      
     });
+  </script>
+  <script src="../../2023web/00javascript/20230303_wow/wow.js"></script>
+  <script>
+    new WOW().init();
   </script>
 </body>
 </html>
